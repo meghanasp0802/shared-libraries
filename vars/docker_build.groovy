@@ -1,4 +1,4 @@
-def call(String ImageTag, String DockerHubUser, String ProjectName)
+def call(String ProjectName,String ImageTag, String DockerHubUser)
 {
   bat "docker build -t ${DockerHubUser}/${ProjectName}:${ImageTag} ."
 }
